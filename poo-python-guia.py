@@ -6,9 +6,9 @@ os.system("cls")
 # sencilla y entendible.
 
 #Como usar:
-#El archivo se divide en secciones, cada sección explica un tema específico y tienen ejemplos.
-#Para correr el Código de cada ejemplo simplemente hay que eliminar o comentar las tres comillas (""") 
-#Que están por encima y por debajo del Código de la sección correspondiente.
+#El archivo se divide en secciones, cada sección explica un tema específico y tiene ejemplos.
+#Para correr el código de cada ejemplo simplemente hay que eliminar o comentar las tres comillas (""") 
+#Que están por encima y por debajo del código de la sección correspondiente.
 
 #Indice
 #-Seccion 1: introducción
@@ -34,8 +34,8 @@ os.system("cls")
 
 
 #Seccion 1: introducción-----------------------------------------------------------------------------------------
-#La programación orientada a objetos se fundamenta en que todo lo que se pueda crear con Código es un objeto
-#y como tal tiene propiedades (en Python se suelen llamar atributos) y pueden realizan acciones (en Python se 
+#La programación orientada a objetos se fundamenta en que todo lo que se pueda crear con código es un objeto
+#y como tal tiene propiedades (en Python se suelen llamar atributos) y pueden realizar acciones (en Python se 
 #suelen llamar métodos)
 #Por ejemplo auto es un objeto, y tiene propiedades (color, modelo, patente) y 
 #puede realizar acciones (encender, apagar, frenar)
@@ -97,7 +97,7 @@ class perro(): #Creación clase perro
         print("woof woof")
     
 #Esto se entendería como:
-#"Un perro tiene un nombre, una raza y un dueño, ademas el perro puede ladrar "
+#"Un perro tiene un nombre, una raza y un dueño, ademas el perro puede ladrar"
 
 
 class dueño(): #Creación clase dueño
@@ -107,14 +107,14 @@ class dueño(): #Creación clase dueño
         self.contacto=contacto
 
 #Esto se entendería como:
-#"Un dueño tiene un nombre, direccion y un contacto,"
+#"Un dueño tiene un nombre, direccion y un contacto"
 
 dueño1=dueño("Alberto","Antartida 225",2364588996) #Creación objeto dueño.
 perro1=perro("Tornillo","Salchicha",dueño1) #Creación objeto perro.
  
 #Podemos ver ciertas propiedades de los objetos dueño y perro
-print(dueño1.direccion) #Se imprime la direccion de Alberto
-print(perro1.raza)  #Se imprime la raza de Tornillo
+print(dueño1.direccion) #Se imprime la direccion del dueño Alberto
+print(perro1.raza)  #Se imprime la raza del perro Tornillo
 
 #Ademas algun metodo
 
@@ -214,7 +214,7 @@ print(usuario1.get_nombre_usuario()) #Imprimimos el nuevo nombre del usuario.
 #Seccion 6: métodos getter properties y setter properties ------------------------------------------------------------------------------------
 #Estos métodos prácticamente hacen lo mismo que set y get, pero usan decoradores.
 #Esta metodología mejora la legibilidad del Código, debido que se generan atributos
-#que funcionan como métodos, y al funcionar como métodos, permiten agregar una lógica
+#que funcionan como métodos, y al funcionar como métodos, permiten agregar una lógica.
 """
 class usuario():
     
@@ -401,7 +401,7 @@ usuario2.acceso()
 #Seccion 11: Herencia------------------------------------------------------------------------------------
 #Python permite que al tener una clase definida, otra pueda "heredar" sus atributos y metodos y ademas permite agregar 
 # propios de esta nueva clase, esto sirve para ahorrar codigo.
-#La idea es que la clase padre, sea la ams general, es decir, que contenga atributos y metodos que tendrian las clases hijas.
+#La idea es que la clase padre, sea la mas general, es decir, que contenga atributos y metodos que tendrian las clases hijas.
 """
 class Persona():  #Clase padre 
     def __init__(self,nombre,edad):
